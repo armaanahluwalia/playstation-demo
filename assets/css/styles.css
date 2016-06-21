@@ -1,0 +1,12 @@
+#header {
+    padding: 20px;
+}
+#content {
+    padding: 20px;
+}
+#total-count {
+    float: left;
+}
+#pagination {
+    float: right;
+}
