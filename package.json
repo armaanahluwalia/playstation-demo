@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rollup -c -o dist/index.js",
+    "start": "rollup -c -o bundle.js",
     "start-sass": "node-sass --watch assets/scss/styles.scss assets/css/styles.css"
   },
   "author": "",
