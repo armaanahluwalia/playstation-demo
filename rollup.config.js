@@ -21,6 +21,7 @@ export default {
             main: true
         }),
         babel({
+            "presets": [ "es2015-rollup" ]
             // exclude: 'node_modules/**'
         })
     ]

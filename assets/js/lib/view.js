@@ -5,9 +5,8 @@ export default class View {
         this.el = this.options.el;
     }
     render() {
-        var children = this.el.childNodes;
-        for (var i = 0; i < children.length; i++) {
-            this.options.el.removeChild(children[i]);
+        while (this.el.childNodes.length) {
+            this.options.el.removeChild(this.el.childNodes[0]);
         }
     }
 }

@@ -4,21 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rollup -c -w -o dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "start": "rollup -c -o dist/index.js",
+    "start-sass": "node-sass --watch assets/scss/styles.scss assets/css/styles.css"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "debounce": "^1.0.0"
-  },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
     "node-sass": "^3.8.0",
     "npm": "^3.9.6",
-    "rollup-plugin-babel": "^2.5.1",
+    "rollup-plugin-babel": "2.4.0",
     "rollup-plugin-commonjs": "^3.0.0",
     "rollup-plugin-includepaths": "^0.1.5",
     "rollup-plugin-node-resolve": "^1.7.0"

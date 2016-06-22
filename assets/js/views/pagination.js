@@ -3,15 +3,20 @@ import View from 'lib/view';
 export default class Pagination extends View {
     render(data) {
         super.render();
-        var prevBtn = document.createElement("button");
-        prevBtn.setAttribute('id', 'prevBtn');
+
+        //Previous Button
+        let prevBtn = document.createElement("button");
+        prevBtn.setAttribute('class', 'prev-btn fa fa-arrow-left');
         prevBtn.addEventListener('click', data.onPrevious);
 
-        var nextBtn = document.createElement("button");
-        nextBtn.setAttribute('id', 'nextBtn');
+        //Next Button
+        let nextBtn = document.createElement("button");
+        nextBtn.setAttribute('class', 'next-btn fa fa-arrow-right');
         nextBtn.addEventListener('click', data.onNext);
 
-        var displayCount = document.createElement('div');
+        //Display Count
+        let displayCount = document.createElement('div');
+        displayCount.setAttribute('class', 'display-count');
         displayCount.innerHTML = data.page + '/' + data.total;
 
         this.el.appendChild(prevBtn);

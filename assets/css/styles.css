@@ -1,12 +1,66 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.clearfix {
+  clear: both; }
+
+button {
+  cursor: pointer; }
+
+#loader {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 20px; }
+  #loader.show {
+    display: block; }
+
 #header {
-    padding: 20px;
-}
+  padding: 20px;
+  font-size: 18px; }
+  #header #searchBox {
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px; }
+  #header #submitSearch {
+    font-size: 18px; }
+
 #content {
-    padding: 20px;
-}
-#total-count {
-    float: left;
-}
-#pagination {
-    float: right;
-}
+  padding: 20px; }
+  #content #list {
+    padding: 20px; }
+    #content #list .item {
+      padding: 10px 0;
+      margin: 3px 0;
+      border-bottom: 1px solid #e2e2e2; }
+    #content #list h3 {
+      padding: 5px 0;
+      margin: 0; }
+    #content #list h4, #content #list h5, #content #list h6 {
+      font-weight: normal;
+      margin: 3px 0; }
+    #content #list .preview-image {
+      width: 100px;
+      float: left;
+      margin-right: 10px; }
+      #content #list .preview-image img {
+        width: 100px;
+        height: 60px; }
+    #content #list .info-container {
+      float: left;
+      width: calc( 100% - 110px); }
+  #content #total-count {
+    float: left; }
+  #content #pagination {
+    float: right; }
+    #content #pagination .prev-btn,
+    #content #pagination .next-btn,
+    #content #pagination .display-count {
+      display: inline; }
+    #content #pagination .display-count {
+      margin: 0 5px; }
